@@ -1,4 +1,4 @@
-def make_cipher(item_to_encode, shift_by, alphabet):
+def encode(item_to_encode, shift_by, alphabet):
     print('Encoded:')
     encoded = ''                                     # set variable to hold encoded message
     
@@ -43,7 +43,7 @@ def main():                   # main function
     if encode_decrypt == 'y':                                       # if encode == y then encode
         item_to_encode = input('item to encode: ')                  # set item to encode to user input
         shift_by = int(input('Number to encode by: '))              # set number to shift by to user input
-        item_to_encode = make_cipher(item_to_encode, shift_by, alphabet)  # Run the encode function
+        item_to_encode = encode(item_to_encode, shift_by, alphabet)  # Run the encode function
     elif encode_decrypt == 'n':
         item_to_encode = input('item to decode: ')                  # same info but reverse
         shift_by = int(input('Number to decode by: '))              # number to decode by
