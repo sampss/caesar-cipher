@@ -21,4 +21,4 @@ def test_cipher(original_sentence, encrypted_sentence, monkeypatch):
         sys.modules.pop("cipher", None)
         importlib.import_module(name="cipher", package="files")
     
-    assert encrypted_sentence in mocked_stdout.getvalue().strip()
+        assert encrypted_sentence in mocked_stdout.getvalue().strip()
