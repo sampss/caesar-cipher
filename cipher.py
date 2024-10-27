@@ -6,7 +6,8 @@ def encode(item_to_encode, shift_by, alphabet):
             index = alphabet.index(lowercase_letter)
             encoded_index = (index + shift_by) % 26
             encoded_letter = alphabet[encoded_index]
-            encoded += encoded_letter.upper() if letter.isupper() else encoded_letter
+            # encoded += encoded_letter.upper() if letter.isupper() else encoded_letter
+            encoded += encoded_letter
         else:
             encoded += letter
     return encoded
